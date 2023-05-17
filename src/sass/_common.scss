@@ -1,1 +1,51 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    background-color: red;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'IBM Plex Sans';
+}
+
+ul {
+list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;}
+
+[type=button],
+[type=submit],
+a,
+button {
+    transition-timing-function: ease-in;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
