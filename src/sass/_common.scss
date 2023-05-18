@@ -1,10 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-    background-color: red;
+
     box-sizing: border-box;
-    color: white;
-    font-family: 'IBM Plex Sans';
+    color: var(--brand-color);
+    font-family: var(--main-type-text);
 }
 
 ul {

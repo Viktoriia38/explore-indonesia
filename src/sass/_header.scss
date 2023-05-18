@@ -38,7 +38,7 @@
 
 .menu_main_icon {
     display: block;
-    fill: #fff;
+    fill: var(--brand-color);
 }
 
 // Button menu
@@ -59,7 +59,7 @@
 
     &:hover,
     &:focus {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: var(--dark-text-color);
     }
 }
 
@@ -72,7 +72,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: var(--dark-text-color);
+    opacity: 80%;
     z-index: 999;
 
     transform: translateX(100%);
@@ -89,11 +90,11 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    color: #fff;
+    color: var(--brand-color);
 }
 
-.icon-menu {
-    fill: white;
+.icon-close {
+    fill: var(--light-color);
 }
 
 .menu_wrapp {
@@ -110,7 +111,7 @@
 
 .menu_title {
     margin: 0;
-    color: #828282;
+    color: var(--title-text-color);
     line-height: 1.56;
     font-size: 18px;
     font-weight: 400;
@@ -139,7 +140,6 @@
 }
 
 .logo.contact-us {
-    fill: black;
     padding: 0;
     margin-bottom: 128px;  
 }
@@ -149,7 +149,7 @@
 }
 
 .contact-us_main-wrapp {
-    background-color: white;
+    background-color: var(--light-color);
     padding: 18px 30px 16px;
     width: 65vw;
     height: 100%;
@@ -157,13 +157,13 @@
 
 .contact-us_title {
     padding: 0 18px;
-    color: black;
+    color: var(--dark-text-color);
     font-size: 40px;
     font-weight: 400;
 }
 
 .contact-link:hover {
-    color: rgb(74, 234, 220);
+    color: var(--brand-color);
 }
 
 .modal-form {
@@ -178,7 +178,7 @@
 
 .modal-label {
     font-size: 12px;
-    color: #828282;
+    color: var(--title-text-color);
     line-height: 1, 17;
     letter-spacing: 0.01em;
 }
@@ -186,7 +186,7 @@
 .modal-input {
     width: 100%;
     height: 40px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--dark-text-color);
     border-radius: 4px;
     font-size: 20px;
     outline: unset;
@@ -210,11 +210,11 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: #828282;    
+    color: var(--title-text-color);    
     outline: transparent;
     padding: 16px;
     margin-bottom: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--dark-text-color);
     resize: none;
     display: block;
 }
@@ -223,7 +223,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: black;
+    color: var(--dark-text-color);
 }
 
 
@@ -231,8 +231,8 @@
     min-width: 200px;
     height: 50px;
     background-color: transparent;
-    color: black;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--dark-text-color);
+    box-shadow: 0px 4px 4px var(--dark-text-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 20px;
@@ -251,7 +251,7 @@
     &:hover,
     &:focus {
         cursor: pointer;
-        background-color: #e2e2e2;;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: var(--brand-color);
+        box-shadow: 0px 4px 4px var(--title-text-color);
     }
 }
