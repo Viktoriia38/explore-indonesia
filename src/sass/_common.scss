@@ -1,14 +1,18 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-
-    box-sizing: border-box;
     color: var(--brand-color);
     font-family: var(--main-type-text);
 }
 
 ul {
-list-style: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
 }
 
 a {
@@ -29,6 +33,8 @@ button {
     transition-timing-function: ease-in;
     transition-duration: .2s;
     cursor: pointer;
+    border: none;
+    border-color: none;
 }
 
 .visually-hidden {
@@ -43,9 +49,16 @@ button {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+
 }
 
-ul {
+h1, h2, h3, h4 {
     margin: 0;
-    padding: 0;
+}
+
+.section { 
+    display: block;
+    // max-width: 1600px;    
+    padding: 50px 0;
+    margin: auto;
 }
